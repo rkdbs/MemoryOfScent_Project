@@ -4,24 +4,22 @@
 }
 .main1{
     width:100%;
-    height:3000px;
     background: linear-gradient(180deg, #A5BFF0, #E1C2F9);
 }
 .main2{
     width:96%;
-    height:3800px;
+    height:3000px;
     background-image: url("../img/격자.jpg"); 
     margin:auto;
+    margin-top:-10px;
 }
 .main2-1{
     width:85%;
-    margin:auto;
-    margin-top:50px;
+    margin:auto;    
 }
 .menu-div{
     width:100%;
-    height:150px;
-    
+    height:150px;   
 }
 .img-logo{ width:90px;  margin:20px 0px 20px 0px;}
 .ul-div{
@@ -34,39 +32,29 @@
     list-style-type: none;
     padding: 5px 100px 0px 100px;
 }
-.banner{
-    width:100%;
-    margin:10px auto;
-    position:relative;
+.diary{
+    font-weight:bold;
+    text-decoration:underline;
 }
-.banner img{
-    width:100%;
-    vertical-align: middle;
+#date{
+    color:black;
+    font-weight:bold;
+    
 }
-.banner-text{
-    position:absolute;
-    top:40%;
-    left:50%;
-    width:100%;
-    transform:translate(-50%,-50%);
-    font-size:18px;
-    text-align: right;
-    color:white;
-}
-
-.perfume-img-1{
+.file-upload{
+    width:100px;
+    height:40px;
+    border: solid 1px black;
+    background-color: white;
     display:inline-block;
 }
-.perfume-text-1{
-    display:inline-block;
-    margin-top:20px;
-}
-.diary-text-1{
-    margin-top: 20px;
+.diary-textarea{
+    display:block;
+    width:100%;
 }
 
 footer{
     width:100%;
-    height:500px;
+    height:300px;
     background-color: #d3d3d3;    
 }

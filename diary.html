@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/diarySytle.css">
+    <title>커뮤니티</title>
+</head>
+<body>
+    <div class="main1">
+        <div class="menu-div" style="text-align : center;">
+            <img src="./img/logo.png" class="img-logo">
+            <div class="ul-div">
+                <ul class="menu-text">
+                    <li class="diary">일기쓰기</li>
+                    <li class="community">커뮤니티</li>
+                    <li class="calender">캘린더</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main2">
+            <div class="main2-1">
+                <div class="main2-2">
+                    <h1 id="date">date</h1>
+        
+                    <script>
+                        var Target = document.getElementById("date");
+                        function date() {
+                            var dat = new Date();
+
+                            var year = dat.getFullYear();
+                            var month = dat.getMonth();
+                            var date = dat.getDate();
+                            var day = dat.getDay();
+                            var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+                            Target.innerText = `${year}년 ${month + 1}월 ${date}일 ${week[day]}요일 `;
+                                
+                        }
+                        date();
+                    </script>
+                
+                    <form>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>오늘의 향기를 선택해주세요.</option>
+                            <option value="1">향수1</option>
+                            <option value="2">향수2</option>
+                            <option value="3">향수3</option>
+                            <option value="4">...</option>
+                        </select>
+
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option value="1">전체 공개</option>
+                            <option value="2">일부 공개</option>
+                            <option value="3">나만 보기</option>
+                        </select>
+
+                        <div class="file-upload">
+
+                        </div>
+                        <textarea placeholder="일기를 작성해주세요." rows="50" class="diary-textarea">
+
+                        </textarea>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+
+        </footer> 
+    </div>
+</body>
+</html>
