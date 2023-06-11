@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- 합쳐지고 최소화된 최신 CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-     <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
- 
-     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
      <link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
     <title>향기의 기억장</title>
 </head>
 <body>
     <div class="main1">
-        <div class="menu-div" style="text-align : center;">
+        <header style="text-align : center;">
             <img src="./img/logo.png" class="img-logo">
-            <div class="ul-div">
-                <ul class="menu-text">
-                    <li class="diary">일기쓰기</li>
-                    <li class="community">커뮤니티</li>
-                    <li class="calender">캘린더</li>
-                </ul>
-            </div>
-        </div>
+            <!-- <div class="nav-toggle" id="nav-toggle">
+                <i class="bi bi-list menu-list"></i>
+            </div> -->
+                <div class="ul-div">
+                    <ul class="menu-text">
+                        <li class="diary">일기쓰기</li>
+                        <li class="community">커뮤니티</li>
+                        <li class="calender">캘린더</li>
+                    </ul>
+                </div>
+        </header>
 
         <div class="main2">
             <div class="banner">
@@ -34,8 +35,8 @@
                     <img src="./img/mainbanner.jpg" width="100%" height="">
                 </div>
                     <div class="banner-text">
-                        <h1><b>향수를 기록하다, 향기의 기억장</b><br/><br/></h1>
-                        <p>
+                        <span class="banner-main"><b>향수를 기록하다, 향기의 기억장</b></span>
+                        <p class="banner-p">
                             향기의 기억장은 오늘 하루 있었던 일을 향기로 기록하는<br>
                             서비스입니다. 매일 기억하기 힘든 하루를 향기 하나로<br>
                             간단하게 표현할 수 있으며 기존의 일기장보다 더유니크한<br>
@@ -48,7 +49,7 @@
             </div>
 
             <div class="main2-1">
-                <h1><b>어제 쓴 일기예요</b></h1>
+                <span class="diary-text-main"><b>어제 쓴 일기예요</b></span>
                 <img src="./img/perfume.png" width="60px" class="perfume-img-1"><h2 class="perfume-text-1">오리엔탈</h2>
                 <p class="diary-text-1">
                     오늘은 한 게 딱히 없다. 아무래도 코로나에 걸려서 방에서만 지내서 그런가... 아 맞다.
@@ -65,11 +66,11 @@
                     <img src="./img/postit.png" width="500px" class="postit-img">
                 </div>
 
-                <div style="text-align : center;">
+                <div class="perfume-list-div">
 
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -77,7 +78,7 @@
                     </div>
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -85,7 +86,7 @@
                     </div>
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -93,40 +94,7 @@
                     </div>
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3>향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3>향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3>향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -135,7 +103,7 @@
 
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -143,7 +111,7 @@
                     </div>
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -151,7 +119,7 @@
                     </div>
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
@@ -159,7 +127,40 @@
                     </div>
                     <div class="perfume-list">
                         <div class="perfume-img"></div>
-                        <h3>향수</h3>
+                        <h3 class="perfume-list-text">향수</h3>
+                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Magni quia architecto
+                            corrupti sapiente? Quae eveniet nostrum.
+                        </p>
+                    </div>
+
+                    <div class="perfume-list">
+                        <div class="perfume-img"></div>
+                        <h3 class="perfume-list-text">향수</h3>
+                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Magni quia architecto
+                            corrupti sapiente? Quae eveniet nostrum.
+                        </p>
+                    </div>
+                    <div class="perfume-list">
+                        <div class="perfume-img"></div>
+                        <h3 class="perfume-list-text">향수</h3>
+                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Magni quia architecto
+                            corrupti sapiente? Quae eveniet nostrum.
+                        </p>
+                    </div>
+                    <div class="perfume-list">
+                        <div class="perfume-img"></div>
+                        <h3 class="perfume-list-text">향수</h3>
+                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Magni quia architecto
+                            corrupti sapiente? Quae eveniet nostrum.
+                        </p>
+                    </div>
+                    <div class="perfume-list">
+                        <div class="perfume-img"></div>
+                        <h3 class="perfume-list-text">향수</h3>
                         <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Magni quia architecto
                             corrupti sapiente? Quae eveniet nostrum.
