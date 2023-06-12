@@ -16,14 +16,17 @@
 .main2-1{
     width:85%;
     margin:auto;
-    margin-top:50px;
 }
 
-.menu-div{
+header{
     width:100%;
-    height:150px;   
+    height:150px;
 }
-.img-logo{ width:90px;  margin:20px 0px 20px 0px;}
+.img-logo{
+    width:90px;
+    margin:20px 0px 20px 0px;
+    display:inline;
+}
 .ul-div{
     display: flex;
     justify-content: center;
@@ -34,6 +37,13 @@
     list-style-type: none;
     padding: 5px 100px 0px 100px;
 }
+.nav-toggle{
+    display:flex;
+    justify-content: flex-end;
+    color:white;
+}
+
+
 .diary{
     font-weight:bold;
     text-decoration:underline;
@@ -41,22 +51,128 @@
 #date{
     color:black;
     font-weight:bold;
-    
+    margin:20px 0 15px 0;
+    display:inline-block;
+}
+
+h1{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.form-diary-menu{
+    width:100%;
+}
+.perfume-select-td{
+    width:60%;
+}
+.open-select-td{
+    width:20%;
+}
+.file-upload-td{
+    width:20%;
+}
+
+
+
+.form-menu{
+     height:50px;
+}
+.form-select{
+    height:50px;
+}
+.perfume-select{
+    width:100%;
+}
+.open-select{
+    width:100%;
 }
 .file-upload{
-    width:100px;
-    height:40px;
+    width:100%;
+    height: 50px;
     border: solid 1px black;
     background-color: white;
     display:inline-block;
 }
+.file-upload-button{
+    width:32%;
+    height:47px;
+}
+.i-file-upload-button{
+    width:30px;
+}
+
 .diary-textarea{
     display:block;
     width:100%;
+    
 }
 
 footer{
     width:100%;
     height:300px;
     background-color: #d3d3d3;    
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .main2{
+        margin-bottom:20px;
+    }
+    h1{
+        font-size:30px;
+    }
+
+    .form-diary-menu{
+        width:100%;
+    }
+    .perfume-select-td{
+        width:50%;
+        font-size:12px;
+    }
+    .open-select-td{
+        width:25%;
+        font-size:12px;
+    }
+    .file-upload-td{
+        width:25%;
+    }
+
+}
+
+@media (max-width:767px){
+    .main2{
+        margin-bottom:16px;
+    }
+    
+    .main2{
+        width:94%;
+    }
+    header{
+        width:100%;
+        height:110px;
+    }
+    .ul-div{
+        display:none;
+    }
+    h1{
+        font-size:25px;
+    }
+    
+    .form-diary-menu{
+        width:100%;
+    }
+    .perfume-select-td{
+        width:50%;
+        font-size:10px;
+    }
+    .open-select-td{
+        width:25%;
+        font-size:10px;
+    }
+    .file-upload-td{
+        width:25%;
+    }
 }

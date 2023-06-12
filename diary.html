@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 합쳐지고 최소화된 최신 CSS -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
-
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/diarySytle.css">
     <title>커뮤니티</title>
@@ -54,23 +51,40 @@
                     </script>
                 
                     <form>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option selected>오늘의 향기를 선택해주세요.</option>
-                            <option value="1">향수1</option>
-                            <option value="2">향수2</option>
-                            <option value="3">향수3</option>
-                            <option value="4">...</option>
-                        </select>
+                        <table class="form-diary-menu">
+                            <tr>
+                                <td class="perfume-select-td">
+                                    <select class="form-select perfume-select" aria-label="Default select example">
+                                        <option selected class="selected">오늘의 향기를 선택해주세요.</option>
+                                        <option value="1">향수1</option>
+                                        <option value="2">향수2</option>
+                                        <option value="3">향수3</option>
+                                        <option value="4">...</option>
+                                    </select>
+                                </td>
+                            
+                            
+                                <td class="open-select-td">
+                                    <select class="form-select open-select" aria-label="Default select example">
+                                        <option selected class="selected">공개 여부를 선택해주세요.</option>
+                                        <option value="1">전체 공개</option>
+                                        <option value="2">일부 공개</option>
+                                        <option value="3">나만 보기</option>
+                                    </select>
+                                </td>
 
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option value="1">전체 공개</option>
-                            <option value="2">일부 공개</option>
-                            <option value="3">나만 보기</option>
-                        </select>
 
-                        <div class="file-upload">
+                                <td class="file-upload-td">
+                                    <div class="file-upload">
+                                        <button type="file" class="file-upload-button"><i class="bi i-file-upload-button fa-5x bi-file-earmark-image"></i></button>
+                                        <button type="button" class="file-upload-button"><i class="bi i-file-upload-button bi-filetype-mp4"></i></button>
+                                        <button type="button" class="file-upload-button"><i class="bi i-file-upload-button bi-filetype-mp3"></i></button>
 
-                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
                         <textarea placeholder="일기를 작성해주세요." rows="50" class="diary-textarea">
 
                         </textarea>
