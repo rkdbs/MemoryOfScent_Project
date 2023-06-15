@@ -1,0 +1,147 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.main1{
+    width:100%;
+    background: linear-gradient(180deg, #A5BFF0, #E1C2F9);
+}
+.main2{
+    width:96%;
+    background-image: url("../img/격자.jpg"); 
+    background-repeat:repeat;
+    margin:auto;
+    margin-bottom:30px;
+}
+.main2-1{
+    width:85%;
+    margin:auto;
+    margin-top:50px;
+}
+
+
+
+
+header{
+    width:100%;
+    height:150px;
+}
+.img-logo{
+    width:90px;
+    margin:20px 0px 20px 0px;
+    display:inline;
+}
+.ul-div{
+    display: flex;
+    justify-content: center;
+}
+.menu-text>li{
+    float:left;
+    color:white;
+    list-style-type: none;
+    padding: 5px 100px 0px 100px;
+}
+
+h1{
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer{
+    width:100%;
+    height:300px;
+    background-color: #d3d3d3;    
+}
+
+.profil1 {
+    position: absolute;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    left: 146px;
+    top: 239px;
+    background: #AE99BA;
+}
+
+.profil1-Name-text {
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    left: 241px;
+    top: 251px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.profil1-perfumeName-text {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 210px;
+    top: 337.5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.profil2 {
+    position: absolute;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    left: 144px;
+    top: 600px;
+    background: #74739B;
+}
+
+.profil2-Name-text {
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    left: 239px;
+    top: 612px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.profil2-perfumeName-text {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 215px;
+    top: 697px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .main2{
+        margin-bottom:20px;
+    }
+}
+
+@media (max-width:767px){
+    .main2{
+        margin-bottom:16px;
+    }
+    
+    .main2{
+        width:94%;
+    }
+    header{
+        width:100%;
+        height:110px;
+    }
+    .ul-div{
+        display:none;
+    }
+}

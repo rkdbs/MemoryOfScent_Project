@@ -90,9 +90,6 @@ header{
 .diary-text-1{
     margin-top: 20px;
 }
-.postit-img{
-    margin-top:50px;
-}
 
 h1{
     margin-block-end: 0em;
@@ -179,7 +176,6 @@ footer{
     
 
     .postit-img{
-        margin-top:50px;
         width:400px;
     }
 }
@@ -231,7 +227,6 @@ footer{
     }
 
     .postit-img{
-        margin-top:50px;
         width:300px;
     }
     .perfume-img{
