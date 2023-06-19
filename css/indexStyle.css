@@ -35,7 +35,7 @@ header{
     display: flex;
     justify-content: center;
 }
-.menu-text>li{
+.menu-text>a>li{
     float:left;
     color:white;
     list-style-type: none;
@@ -100,8 +100,12 @@ h1{
 .perfume-img{
     width:200px;
     height:250px;
-    background-color: blue;
 }
+
+.perfume-list-img{
+    width:100%;
+}
+
 .perfume-list-div{
     width: 90%;
     margin:auto;

@@ -16,15 +16,12 @@
 <body>
     <div class="main1">
         <header style="text-align : center;">
-            <img src="./img/logo.png" class="img-logo">
-            <!-- <div class="nav-toggle" id="nav-toggle">
-                <i class="bi bi-list menu-list"></i>
-            </div> -->
+            <a href="index.html"><img src="./img/logo.png" class="img-logo"></a>
                 <div class="ul-div">
                     <ul class="menu-text">
-                        <li class="diary">일기쓰기</li>
-                        <li class="community">커뮤니티</li>
-                        <li class="calender">캘린더</li>
+                        <a href="diary.html"><li class="diary">일기쓰기</li></a>
+                        <a href="community.html"><li class="community">커뮤니티</li></a>
+                        <a href="calendar.html"><li class="calender">캘린더</li></a>
                     </ul>
                 </div>
         </header>
@@ -50,7 +47,7 @@
 
             <div class="main2-1">
                 <span class="diary-text-main"><b>어제 쓴 일기예요</b></span>
-                <img src="./img/perfume.png" width="60px" class="perfume-img-1"><h2 class="perfume-text-1">오리엔탈</h2>
+                <img src="./img/오리엔탈.png" width="60px" class="perfume-img-1"><h2 class="perfume-text-1">오리엔탈</h2>
                 <p class="diary-text-1">
                     오늘은 한 게 딱히 없다. 아무래도 코로나에 걸려서 방에서만 지내서 그런가... 아 맞다.
                     얼마 전에 비타오백 먹고 싶다 하니까 채원이가 비타오백 기프티콘을 보내줬다. 그리고 오늘 동아리를 했는데,
@@ -69,101 +66,68 @@
                 <div class="perfume-list-div">
 
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="citrus"><img src="./img/시트러스.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">시트러스</h3>
+                        <p class="perfume-ex">
+                            신선한 감귤류의 향으로, 이것저것 하는 게 많은 바빴던 날에 기록하는 향수예요.
                         </p>
                     </div>
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="fruity"><img src="./img/프루티.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">프루티</h3>
+                        <p class="perfume-ex">
+                            상큼하고 달콤한 과일향으로, 전체적으로 기분이 좋았던 날에 기록하는 향수예요.
                         </p>
                     </div>
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="oriental"><img src="./img/오리엔탈.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">오리엔탈</h3>
+                        <p class="perfume-ex">
+                            부드러우면서도 스파이시한 느낌의 향으로, 기분이 나쁘지도 좋지도 않은 그저 그랬던 날에 기록하는 향수예요.
                         </p>
                     </div>
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="woody"><img src="./img/우디.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">우디</h3>
+                        <p class="perfume-ex">
+                            나무의 껍질을 연상 시키는 은은한 느낌의 향으로, 슬픈 일이 있었던 날에 기록하는 향수예요.
                         </p>
                     </div>
 
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="green"><img src="./img/그린.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">그린</h3>
+                        <p class="perfume-ex">
+                            풀과 나뭇잎을 연상 시키는 향으로, 상쾌한 날에 기록하는 향수예요.
                         </p>
                     </div>
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="floral"><img src="./img/플로랄.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">플로랄</h3>
+                        <p class="perfume-ex">
+                            은은향 꽃 향으로, 유독 설레는 일이 많았던 날에 기록하는 향수예요.
                         </p>
                     </div>
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="herb"><img src="./img/허브.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">허브</h3>
+                        <p class="perfume-ex">
+                            안정감과 청량감을 주기 위해 사용되는 라벤더&페퍼민트 향으로, 힐링을 주로 느꼈던 날에 기록하는 향수예요.
                         </p>
                     </div>
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="musk"><img src="./img/머스크.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">머스크</h3>
+                        <p class="perfume-ex">
+                            묵직하면서도 포근한 향으로, 포근한 기분을 주로 느꼈던 날에 기록하는 향수예요.
                         </p>
                     </div>
 
                     <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
-                        </p>
-                    </div>
-                    <div class="perfume-list">
-                        <div class="perfume-img"></div>
-                        <h3 class="perfume-list-text">향수</h3>
-                        <p class="perfume-ex">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Magni quia architecto
-                            corrupti sapiente? Quae eveniet nostrum.
+                        <div class="perfume-img" id="tobacco"><img src="./img/토바코.png" class="perfume-list-img"></div>
+                        <h3 class="perfume-list-text">토바코</h3>
+                        <p class="perfume-ex">
+                            쌉쌀한 느낌이 돋보이는 향수로, 화가 나는 일이 있었던 날에 기록하는 향수예요.
                         </p>
                     </div>
 

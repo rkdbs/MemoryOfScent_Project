@@ -35,11 +35,16 @@ header{
     display: flex;
     justify-content: center;
 }
-.menu-text>li{
+.menu-text>a>li{
     float:left;
     color:white;
     list-style-type: none;
     padding: 5px 100px 0px 100px;
+}
+
+.community{
+    font-weight:bold;
+    text-decoration:underline;
 }
 
 h1{
