@@ -47,7 +47,18 @@ header{
     color:white;
 }
 
-
+.menu-text-li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px white;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+.menu-text-li:hover{
+    font-weight:bold;
+    transition: 250ms;
+}
+.menu-text-li:hover:after { transform: scaleX(1); }
 
 
 
@@ -91,6 +102,11 @@ header{
     margin-top: 20px;
 }
 
+.postit-img{
+    width:500px;
+    margin-top:50px;
+}
+
 h1{
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -127,6 +143,27 @@ footer{
     width:100%;
     height:300px;
     background-color: #d3d3d3;    
+}
+.ft-div-1{
+    position:relative;
+    width:100%;
+    height:300px;
+}
+.ft-div-2{
+    width:75%;
+    height:150px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    justify-content: space-between;
+}
+.ft-3{
+    width:200px;
+}
+.ft{
+    font-weight: bold;
 }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -167,7 +204,6 @@ footer{
     .perfume-img{
         width:150px;
         height:200px;
-        background-color: blue;
     }
     .perfume-list-div{
         width: 90%;
@@ -181,6 +217,18 @@ footer{
 
     .postit-img{
         width:400px;
+    }
+
+    
+
+    
+    .ft-div-2{
+        width:80%;
+        height:100px;
+    }
+    .ft{
+        font-size:13px;
+        font-weight: bold;
     }
 }
 
@@ -236,7 +284,6 @@ footer{
     .perfume-img{
         width:130px;
         height: 180px;
-        background-color: blue;
     }
     .perfume-list-div{
         width: 90%;
@@ -249,5 +296,14 @@ footer{
     .perfume-ex{
         width:130px;
         font-size:13px;
+    }
+
+    .ft-div-2{
+        width:80%;
+        height:100px;
+    }
+    .ft{
+        font-size:10px;
+        font-weight: bold;
     }
 }
