@@ -148,8 +148,8 @@ footer{
     position: absolute;
     width: 100px;
     height: 35px;
-    left: 10%;
-    top: 63.5%;
+    left: 10.7%;
+    top: 65%;
     font-weight: 500;
     font-size : 18px;
     line-height: 35px;
@@ -161,11 +161,48 @@ footer{
     font-size : 20px;
 }
 
+.profil3 {
+    position: absolute;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    left: 7%;
+    top: 85%;
+    background: #C27D7D;
+}
+
+.profil3-Name-text {
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    left: 12%;
+    top: 87%;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.profil3-perfume-text {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 10%;
+    top: 94.5%;
+    font-weight: 500;
+    font-size : 18px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.profil3-p-text {
+    margin-top : 0.5%;
+    font-size : 20px;
+}
+
 .profil1-img {
     margin-left : 5%;
 }
-
-
 
 footer{
     width:100%;
@@ -208,6 +245,96 @@ footer{
         font-size:13px;
         font-weight: bold;
     }
+
+    .profil1-Name-text {
+        left : 300px;
+    }
+    
+    .perfume {
+        width:60px;
+        margin-left : 4.9%;
+        margin-top : 6.5%;
+    }
+    
+    .profil1-perfume-text {
+        position: absolute;
+        width: 100px;
+        height: 35px;
+        left: 10%;
+        top: 30%;
+        font-weight: 500;
+        font-size : 18px;
+        line-height: 35px;
+        color: #000000;
+    }
+    
+    .profil1-p-text {
+        margin-top : 0.5%;
+        font-size : 20px;
+    }
+    
+    .profil2-Name-text {
+        position: absolute;
+        width: 200px;
+        height: 48px;
+        left: 12%;
+        top: 56%;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    
+    .profil2-perfume-text {
+        position: absolute;
+        width: 100px;
+        height: 35px;
+        left: 10%;
+        top: 63.5%;
+        font-weight: 500;
+        font-size : 18px;
+        line-height: 35px;
+        color: #000000;
+    }
+    
+    .profil2-p-text {
+        margin-top : 0.5%;
+        font-size : 20px;
+    }
+    
+    .profil3-Name-text {
+        position: absolute;
+        width: 200px;
+        height: 48px;
+        left: 12%;
+        top: 87%;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    
+    .profil3-perfume-text {
+        position: absolute;
+        width: 100px;
+        height: 35px;
+        left: 10%;
+        top: 94.5%;
+        font-weight: 500;
+        font-size : 18px;
+        line-height: 35px;
+        color: #000000;
+    }
+    
+    .profil3-p-text {
+        margin-top : 0.5%;
+        font-size : 20px;
+    }
+    
+    .profil1-img {
+        margin-left : 5%;
+    }
+
 }
 
 @media (max-width:767px){
