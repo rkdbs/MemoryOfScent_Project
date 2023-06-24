@@ -13,10 +13,59 @@
     margin:auto;
     margin-bottom:30px;
 }
-.main2-1{
+.main2-1, .main2-2, .main2-3 {
     width:85%;
     margin:auto;
-    margin-top:50px;
+    margin: 0 50px;
+}
+
+.community {
+    font-weight : bold;
+    text-decoration: underline;
+}
+
+.main2-1-box {
+    width : 70px;
+    height : 70px;
+    position: relative;
+    display:inline-block;
+    border-radius: 100%;
+    margin-top : 50px;
+}
+
+.box1 {
+    background-color: #AE99BA;
+}
+
+.box2 {
+    background-color: #74739B;
+}
+
+.box3 {
+    background-color: #C27D7D;
+}
+
+.community-text-main{
+    font-size:20px;
+    display:block;
+    margin-left : 100px;
+    margin-top : -70px;
+    position: relative;
+}
+
+.perfume-img-1{
+    display:inline-block;
+    margin-top : 20px;
+}
+.perfume-text-1{
+    font-size : 20px;
+    display: flex;
+    margin : -40px 0 20px 70px;
+}
+.community-text-1{
+    margin-top: 20px;
+    
+
 }
 
 header{
@@ -38,7 +87,6 @@ header{
     list-style-type: none;
     padding: 5px 100px 0px 100px;
 }
-
 .menu-text-li:after {
     display:block;
     content: '';
@@ -51,150 +99,11 @@ header{
     transition: 250ms;
 }
 .menu-text-li:hover:after { transform: scaleX(1); }
-  
 
-.community{
-    font-weight:bold;
-    text-decoration:underline;
-}
-
-/* #date{
-    color:black;
-    font-weight:bold;
-    margin:20px 0 15px 0;
-    display:inline-block;
-} */
-
-h1{
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-footer{
-    width:100%;
-    height:300px;
-    background-color: #d3d3d3;    
-}
-
-.profil1 {
-    position: absolute;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    left: 7%;
-    top: 20%;
-    background: #AE99BA;
-}
-
-.profil1-Name-text {
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    left: 12%;
-    top: 22%;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.perfume1 {
-    width:60px;
-    margin-left : 4.9%;
-    margin-top : 6.5%;
-}
-
-.perfume2, .perfume3 {
-    width:60px;
-    margin-top : 23%;
-    margin-left : 5%;
-}
-
-
-.profil1-perfume-text {
-    position: absolute;
-    width: 100px;
-    height: 35px;
-    left: 10%;
-    top: 30%;
-    font-weight: 500;
-    font-size : 18px;
-    line-height: 35px;
-    color: #000000;
-}
-
-.profil1-p-text {
-    margin-top : 0.5%;
-    font-size : 20px;
-}
-
-.profil2 {
-    position: absolute;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    left: 7%;
-    top: 54%;
-    background: #74739B;
-}
-
-.profil2-Name-text {
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    left: 12%;
-    top: 56%;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.profil2-perfume-text {
-    position: absolute;
-    width: 100px;
-    height: 35px;
-    left: 12%;
-    top: 65%;
-    font-weight: 500;
-    font-size : 18px;
-    line-height: 35px;
-    color: #000000;
-}
-
-.profil2-p-text {
-    margin-top : 0.5%;
-    font-size : 20px;
-}
-
-.profil3 {
-    position: absolute;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    left: 7%;
-    top: 85%;
-    background: #C27D7D;
-}
-
-.profil3-Name-text {
-    margin-left: 15%;
-    margin-top: 71%;
-}
-
-.profil3-perfume-text {
-    margin-left : 11%;
-    margin-top: 70%;
-}
-
-.profil3-p-text {
-    margin-top : 0.5%;
-    font-size : 20px;
-}
-
-.profil1-img {
-    margin-left : 5%;
+.bi-list {
+    visibility: hidden;
+    font-size: 50px;
+    float : right;
 }
 
 footer{
@@ -229,7 +138,7 @@ footer{
     .main2{
         margin-bottom:20px;
     }
-
+    
     .ft-div-2{
         width:80%;
         height:100px;
@@ -238,96 +147,6 @@ footer{
         font-size:13px;
         font-weight: bold;
     }
-
-    .profil1-Name-text {
-        left : 300px;
-    }
-    
-    .perfume {
-        width:60px;
-        margin-left : 4.9%;
-        margin-top : 6.5%;
-    }
-    
-    .profil1-perfume-text {
-        position: absolute;
-        width: 100px;
-        height: 35px;
-        left: 10%;
-        top: 30%;
-        font-weight: 500;
-        font-size : 18px;
-        line-height: 35px;
-        color: #000000;
-    }
-    
-    .profil1-p-text {
-        margin-top : 0.5%;
-        font-size : 20px;
-    }
-    
-    .profil2-Name-text {
-        position: absolute;
-        width: 200px;
-        height: 48px;
-        left: 12%;
-        top: 56%;
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
-    }
-    
-    .profil2-perfume-text {
-        position: absolute;
-        width: 100px;
-        height: 35px;
-        left: 10%;
-        top: 63.5%;
-        font-weight: 500;
-        font-size : 18px;
-        line-height: 35px;
-        color: #000000;
-    }
-    
-    .profil2-p-text {
-        margin-top : 0.5%;
-        font-size : 20px;
-    }
-    
-    .profil3-Name-text {
-        position: absolute;
-        width: 200px;
-        height: 48px;
-        left: 12%;
-        top: 87%;
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
-    }
-    
-    .profil3-perfume-text {
-        position: absolute;
-        width: 100px;
-        height: 35px;
-        left: 10%;
-        top: 94.5%;
-        font-weight: 500;
-        font-size : 18px;
-        line-height: 35px;
-        color: #000000;
-    }
-    
-    .profil3-p-text {
-        margin-top : 0.5%;
-        font-size : 20px;
-    }
-    
-    .profil1-img {
-        margin-left : 5%;
-    }
-
 }
 
 @media (max-width:767px){
@@ -345,6 +164,7 @@ footer{
     .ul-div{
         display:none;
     }
+
     .ft-div-2{
         width:80%;
         height:100px;
@@ -353,99 +173,33 @@ footer{
         font-size:10px;
         font-weight: bold;
     }
-
-    .profil1-Name-text {
-        left : 130px;
+    .bi-list {
+        color : white;
+        visibility: visible;
+        margin-top : -80px;
+        margin-right: 30px;
     }
-    
-    .perfume1 {
-        width:60px;
-        margin-left : 4.9%;
-        margin-top : 34.5%;
-    }
-    
-    .profil1-perfume-text {
+    .menu-text {
         position: absolute;
-        width: 100px;
-        height: 35px;
-        left: 21%;
-        top: 30%;
-        font-weight: 500;
-        font-size : 18px;
-        line-height: 35px;
-        color: #000000;
+        top : 44px;
+        right : 0;
+        left : 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: aliceblue;
+        backdrop-filter: blur(4px);
+        height: 0;
+        transition: all 0.5s;
+        overflow: hidden;
     }
-    
-    .profil1-p-text {
-        margin-top : 0.5%;
-        font-size : 20px;
+    .diary, .community, .calendar {
+        padding: 1em 0;
+        border-bottom: 2px solid #fff;
     }
-
-    .profil2 {
-        margin-top : 45%;
+    .menu-text > a {
+        display: block;
     }
-    
-    .profil2-Name-text {
-        margin-top : 46%;
-        margin-left : 15%;
+    .nav-toggle {
+        visibility: visible;
     }
-
-    .perfume2 {
-        width:60px;
-        top : 40%;
-    }
-    
-    .profil2-perfume-text {
-        left: 21%;
-        top: 88%;
-    }
-    
-    .profil2-p-text {
-        margin-top : 0.5%;
-        font-size : 20px;
-    }
-    
-    .profil3-Name-text {
-        position: absolute;
-        width: 200px;
-        height: 48px;
-        left: 12%;
-        top: 87%;
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
-    }
-
-    .profil3 {
-        margin-top : 70%;
-    }
-    
-    .perfume3 {
-        width:60px;
-        margin-left : 4.9%;
-        margin-top : 34.5%;
-    }
-    
-    .profil3-perfume-text {
-        position: absolute;
-        width: 100px;
-        height: 35px;
-        left: 10%;
-        top: 94.5%;
-        font-weight: 500;
-        font-size : 18px;
-        line-height: 35px;
-        color: #000000;
-    }
-    
-    .profil3-p-text {
-        margin-top : 0.5%;
-        font-size : 20px;
-    }
-    
-    .profil1-img {
-        margin-left : 5%;
-    }
-
 }
