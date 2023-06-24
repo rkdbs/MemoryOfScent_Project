@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
      <link rel="stylesheet" type="text/css" href="./css/calendarStyle.css">
      <link href="./img/icn.ico" rel="shortcut icon" type="image/x-icon">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <title>향기의 기억장</title>
 </head>
 <body>
@@ -63,5 +63,64 @@
             </div>
         </footer> 
     </div>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var calendarImages = ['./img/calendarMay.png', './img/calendarJune.png', './img/calendarJuly.png'];
+        //     var currentImageIndex = 0;
+
+        //     var leftButton = document.querySelector('.left-img');
+        //     var rightButton = document.querySelector('.right-img');
+        //     var calendarImage = document.querySelector('.calendar-img');
+
+        //     leftButton.addEventListener('click', function() {
+        //         currentImageIndex = (currentImageIndex + 1) % 3;
+        //         calendarImage.src = calendarImages[currentImageIndex];
+        //     });
+
+        //     rightButton.addEventListener('click', function() {
+        //         currentImageIndex = (currentImageIndex === 2) ? 0 : currentImageIndex + 1;
+        //         calendarImage.src = calendarImages[currentImageIndex];
+        //     });
+        // }); 
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarImages = ['./img/calendarMay.png', './img/calendarJune.png', './img/calendarJuly.png'];
+            var currentImageIndex = 0;
+
+            var leftButton = document.querySelector('.left-img');
+            var rightButton = document.querySelector('.right-img');
+            var calendarImage = document.querySelector('.calendar-img');
+
+            // leftButton.addEventListener('click', function() {
+            //     if(calendarImage.src.includes('calendarMay')) {
+            //         return;
+            //     }
+            //     calendarImage.src = (currentImageIndex + 1) % 3;
+            //     calendarImage.src = calendarImages[currentImageIndex];
+            // });
+
+            leftButton.addEventListener('click', function() {
+                if(calendarImage.src.includes('calendarMay')) return;
+                else if(calendarImage.src.includes('calendarJuly')){
+                    currentImageIndex = (currentImageIndex-1) % 3;
+                    calendarImage.src = calendarImages[currentImageIndex]; 
+                    currentImageIndex--; 
+                }
+                else {
+                    currentImageIndex = (currentImageIndex);
+                    calendarImage.src = calendarImages[currentImageIndex];
+                } 
+            });
+
+            rightButton.addEventListener('click', function() {
+                if(calendarImage.src.includes('calendarJuly')) {
+                    return;
+                }
+                currentImageIndex = (currentImageIndex === 2) ? 0 : currentImageIndex + 1;
+                calendarImage.src = calendarImages[currentImageIndex];
+            });
+        });
+
+    </script>
 </body>
 </html>

@@ -73,6 +73,7 @@ footer{
     left: 70px;
     top: 45%;
     margin: -20px;
+    cursor: pointer;
 }
 
 .right-img {
@@ -81,6 +82,7 @@ footer{
     right: 70px;
     top: 45%;
     margin: -20px;
+    cursor: pointer;
 }
 
 .calendar-img {
