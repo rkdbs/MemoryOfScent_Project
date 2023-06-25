@@ -17,13 +17,16 @@
     <div class="main1">
         <header style="text-align : center;">
             <a href="index.html"><img src="./img/logo.png" class="img-logo"></a>
-                <div class="ul-div">
-                    <ul class="menu-text">
-                        <a href="diary.html"><li class="diary menu-text-li">일기쓰기</li></a>
-                        <a href="community.html"><li class="community menu-text-li">커뮤니티</li></a>
-                        <a href="calendar.html"><li class="calender menu-text-li">캘린더</li></a>
+                <nav class="nav container">
+                    <ul class="nav-list">
+                        <li class="menu-text-li diary"><a href="diary.html" class="nav-link">일기쓰기</a></li>
+                        <li class="menu-text-li community"><a href="community.html" class="nav-link">커뮤니티</a></li>
+                        <li class="menu-text-li calendar"><a href="calendar.html" class="nav-link">캘린더</a></li>
                     </ul>
-                </div>
+                    <div class="nav-toggle" id="nav_toggle">
+                        <i class="bi bi-list"></i>
+                    </div>
+                </nav>
         </header>
 
         <div class="main2">
@@ -164,5 +167,24 @@
             </div>
         </footer> 
     </div>
+    <script>
+        const navToggleI = nav_toggle.getElementsByTagName("i")[0]; // nav_toggle 안에서 찾음
+        const navListUl = document.getElementsByClassName("nav-list")[0]; // document 전체에서 찾음
+
+        console.log(navToggleI);
+        console.log(navListUl);
+
+        // .nav-toggle 클릭하면
+
+        nav_toggle.onclick = () => {
+            // .nav-toggle i 햄버거메뉴 <-> X
+            // class에서 bi-list <-> bi-x-lg
+            navToggleI.classList.toggle("bi-list");
+            navToggleI.classList.toggle('bi-x-lg');
+
+            // .nav-list에 .show-menu toggle
+            navListUl.classList.toggle("show-menu");
+        }
+    </script>
 </body>
 </html>
