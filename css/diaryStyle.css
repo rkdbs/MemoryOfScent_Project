@@ -26,30 +26,16 @@ header{
     width:90px;
     margin:20px 0px 20px 0px;
     display:inline;
-}
-.ul-div{
+}.nav{
     display: flex;
     justify-content: center;
 }
+
 .menu-text>a>li{
-    float:left;
-    color:white;
+    float: left;
     list-style-type: none;
-    padding: 5px 100px 0px 100px;
+    padding: 5px 100px 0px 100px
 }
-
-.nav-toggle{
-    display:flex;
-    justify-content: flex-end;
-    color:white;
-}
-
-.bi-list {
-    visibility: hidden;
-    font-size : 50px;
-    cursor: pointer;
-}
-
 
 .menu-text-li:after {
     display:block;
@@ -57,12 +43,52 @@ header{
     border-bottom: solid 1px white;
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
-  }
-.menu-text-li:hover{
+}
+.nav-list>li>a:hover{
+    color : white;
     font-weight:bold;
     transition: 250ms;
+    text-decoration: none;
 }
-.menu-text-li:hover:after { transform: scaleX(1); }
+
+.menu-text-li:hover:after {
+    transform: scaleX(1);
+}
+
+.nav.container {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 0 16px;
+    color : #fff;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 200px;
+    margin-left : 291px;
+    margin-top : 40px;
+    list-style-type: none;
+    position: fixed;
+}
+
+.nav-toggle{
+    visibility: hidden;
+    display:flex;
+    justify-content: flex-end;
+    padding : -180% 0% 0% 0%;
+    margin-top: -82.5px;
+    margin-right : 20px;
+    cursor: pointer;
+}
+
+.bi-x-lg {
+    font-size : 30px;
+}
+
+.bi-list {
+    font-size : 35px;
+}
 
 
 .diary{
@@ -197,6 +223,19 @@ footer{
         font-size:13px;
         font-weight: bold;
     }
+    .nav-list {
+        position: fixed;
+        margin-left : -20px;
+    }
+
+    .postit-img{
+        width:400px;
+    }
+
+    a.nav-link {
+        display: flex;
+        margin-left : 20px;
+    }
 
 }
 
@@ -244,10 +283,51 @@ footer{
         font-size:10px;
         font-weight: bold;
     }
-    .bi-list {
-        color : white;
+    .nav-list { 
+        position : absolute; 
+        z-index: 1;
+        top : 70px;
+        line-height : 40px;
+        right : 0; 
+        left : 0; 
+        flex-direction: column; 
+        text-align: center; 
+        background-color: aliceblue;
+        opacity: 70%;
+        backdrop-filter: blur(1px);
+        height : 0; 
+        transition: all 0.4s;
+        overflow: hidden;
+    }
+
+    .nav-item {
+        padding : 1em 0; 
+        border-bottom: 2px solid #fff;
+    }
+
+    .nav-link {
+        display: block; 
+    }
+
+    .nav-list>li>a {
+        color : #323232;
+        font-size : 16px;
+        font-weight: bold;
+        line-height: 42px;
+        display: block;
+    }
+
+    .nav-toggle { 
         visibility: visible;
-        margin-top : -80px;
-        margin-right: 30px;
+        position: absolute; 
+        right : 16px; 
+        cursor: pointer;
+    }
+    .show-menu {
+        height : 130px;
+    }
+    .nav-list>li>a:hover{
+        color : #232323;
+        text-decoration: underline;
     }
 }

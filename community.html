@@ -19,19 +19,17 @@
 <body>
     <div class="main1">
         <header style="text-align : center;">
-            <a href="index.html">
-                <img src="./img/logo.png" class="img-logo">
-            </a>
-            <div class="ul-div">
-                <ul class="menu-text">
-                    <a href="diary.html"><li class="diary menu-text-li">일기쓰기</li></a>
-                    <a href="community.html"><li class="community">커뮤니티</li></a>
-                    <a href="calendar.html"><li class="calender menu-text-li">캘린더</li></a>
+            <a href="index.html"><img src="./img/logo.png" class="img-logo"></a>
+            <nav class="nav container">
+                <ul class="nav-list">
+                    <li class="menu-text-li diary"><a href="diary.html" class="nav-link">일기쓰기</a></li>
+                    <li class="menu-text-li community"><a href="community.html" class="nav-link">커뮤니티</a></li>
+                    <li class="menu-text-li calendar"><a href="calendar.html" class="nav-link">캘린더</a></li>
                 </ul>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="bi bi-list"></i>
-            </div>
+                <div class="nav-toggle" id="nav_toggle">
+                    <i class="bi bi-list"></i>
+                </div>
+            </nav>
         </header>
 
         <div class="main2">
@@ -127,13 +125,6 @@
             </div>
         </footer> 
     </div>
-    <!-- <script>
-        // nav-toggle 요소에 이벤트 리스너를 추가합니다.
-        document.getElementById("nav-toggle").addEventListener("click", function() {
-            // menu-text 요소의 가시성을 토글합니다.
-            document.querySelector(".menu-text").classList.toggle("show-menu");
-        });
-    </script> -->
-
+    <script src="./js/nav.js"></script>
 </body>
 </html>

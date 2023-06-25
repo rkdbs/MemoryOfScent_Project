@@ -17,16 +17,16 @@
     <div class="main1">
         <header style="text-align : center;">
             <a href="index.html"><img src="./img/logo.png" class="img-logo"></a>
-                <div class="ul-div">
-                    <ul class="menu-text">
-                        <a href="diary.html"><li class="diary menu-text-li">일기쓰기</li></a>
-                        <a href="community.html"><li class="community menu-text-li">커뮤니티</li></a>
-                        <a href="calendar.html"><li class="calender">캘린더</li></a>
-                    </ul>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
+            <nav class="nav container">
+                <ul class="nav-list">
+                    <li class="menu-text-li diary"><a href="diary.html" class="nav-link">일기쓰기</a></li>
+                    <li class="menu-text-li community"><a href="community.html" class="nav-link">커뮤니티</a></li>
+                    <li class="calendar"><a href="calendar.html" class="nav-link">캘린더</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav_toggle">
                     <i class="bi bi-list"></i>
                 </div>
+            </nav>
         </header>
 
         <div class="main2">
@@ -66,64 +66,7 @@
             </div>
         </footer> 
     </div>
-    <script>
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     var calendarImages = ['./img/calendarMay.png', './img/calendarJune.png', './img/calendarJuly.png'];
-        //     var currentImageIndex = 0;
-
-        //     var leftButton = document.querySelector('.left-img');
-        //     var rightButton = document.querySelector('.right-img');
-        //     var calendarImage = document.querySelector('.calendar-img');
-
-        //     leftButton.addEventListener('click', function() {
-        //         currentImageIndex = (currentImageIndex + 1) % 3;
-        //         calendarImage.src = calendarImages[currentImageIndex];
-        //     });
-
-        //     rightButton.addEventListener('click', function() {
-        //         currentImageIndex = (currentImageIndex === 2) ? 0 : currentImageIndex + 1;
-        //         calendarImage.src = calendarImages[currentImageIndex];
-        //     });
-        // }); 
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarImages = ['./img/calendarMay.png', './img/calendarJune.png', './img/calendarJuly.png'];
-            var currentImageIndex = 0;
-
-            var leftButton = document.querySelector('.left-img');
-            var rightButton = document.querySelector('.right-img');
-            var calendarImage = document.querySelector('.calendar-img');
-
-            // leftButton.addEventListener('click', function() {
-            //     if(calendarImage.src.includes('calendarMay')) {
-            //         return;
-            //     }
-            //     calendarImage.src = (currentImageIndex + 1) % 3;
-            //     calendarImage.src = calendarImages[currentImageIndex];
-            // });
-
-            leftButton.addEventListener('click', function() {
-                if(calendarImage.src.includes('calendarMay')) return;
-                else if(calendarImage.src.includes('calendarJuly')){
-                    currentImageIndex = (currentImageIndex-1) % 3;
-                    calendarImage.src = calendarImages[currentImageIndex]; 
-                    currentImageIndex--; 
-                }
-                else {
-                    currentImageIndex = (currentImageIndex);
-                    calendarImage.src = calendarImages[currentImageIndex];
-                } 
-            });
-
-            rightButton.addEventListener('click', function() {
-                if(calendarImage.src.includes('calendarJuly')) {
-                    return;
-                }
-                currentImageIndex = (currentImageIndex === 2) ? 0 : currentImageIndex + 1;
-                calendarImage.src = calendarImages[currentImageIndex];
-            });
-        });
-
-    </script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/img.js"></script>
 </body>
 </html>

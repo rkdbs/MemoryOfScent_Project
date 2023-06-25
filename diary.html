@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/diarySytle.css">
+    <link rel="stylesheet" type="text/css" href="./css/diaryStyle.css">
     <link href="./img/icn.ico" rel="shortcut icon" type="image/x-icon">
     <title>커뮤니티</title>
 </head>
@@ -17,16 +17,16 @@
     <div class="main1">
         <header style="text-align : center;">
             <a href="index.html"><img src="./img/logo.png" class="img-logo"></a>
-                <div class="ul-div">
-                    <ul class="menu-text">
-                        <a href="diary.html"><li class="diary">일기쓰기</li></a>
-                        <a href="community.html"><li class="community menu-text-li">커뮤니티</li></a>
-                        <a href="calendar.html"><li class="calender menu-text-li">캘린더</li></a>
-                    </ul>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
+            <nav class="nav container">
+                <ul class="nav-list">
+                    <li class="diary"><a href="diary.html" class="nav-link">일기쓰기</a></li>
+                    <li class="menu-text-li community"><a href="community.html" class="nav-link">커뮤니티</a></li>
+                    <li class="menu-text-li calendar"><a href="calendar.html" class="nav-link">캘린더</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav_toggle">
                     <i class="bi bi-list"></i>
                 </div>
+            </nav>
         </header>
 
         <div class="main2">
@@ -127,5 +127,6 @@
             </div>
         </footer> 
     </div>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
