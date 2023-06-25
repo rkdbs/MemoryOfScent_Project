@@ -109,6 +109,12 @@ h1{
     margin-inline-end: 0px;
 }
 
+.btn{
+    display:inline-block;
+    float:right;
+    margin-top: 25px;
+}
+
 .form-diary-menu{
     width:100%;
 }
@@ -189,12 +195,21 @@ footer{
 }
 
 @media (min-width:768px) and (max-width:991px) {
-
     .main2{
         margin-bottom:20px;
     }
     h1{
         font-size:30px;
+    }
+    
+    #date{
+        font-size:25px;
+    }
+
+    .btn{
+        height:35px;
+        font-size:14px;
+        margin-top: 17px;
     }
 
     .form-diary-menu{
@@ -240,6 +255,7 @@ footer{
 }
 
 @media (max-width:767px){
+
     .main2{
         margin-bottom:16px;
     }
@@ -254,8 +270,13 @@ footer{
     .ul-div{
         display:none;
     }
-    h1{
-        font-size:25px;
+    #date{
+        font-size:20px;
+    }
+    .btn{
+        height:30px;
+        font-size:13px;
+        margin-top: 17px;
     }
     
     .form-diary-menu{
