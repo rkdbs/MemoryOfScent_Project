@@ -9,8 +9,8 @@ a{
 
 
 .face-img {
-    width : 8%;
-    margin : 10px 10px -20px 0;
+    width : 60px;
+    margin : 0.5% 1% -0.5% 0;
 }
 
 .main1{
@@ -179,7 +179,7 @@ footer{
 @media (min-width:768px) and (max-width:991px) {
 
     .face-img {
-        width : 7%;
+        width : 45px;
         margin : 10px 10px -20px 0;
     }
 
@@ -230,7 +230,7 @@ footer{
 @media (max-width:767px){
     
     .face-img {
-        width : 6%;
+        width : 35px;
         margin : 10px 10px -20px 0;
     }
     .main2{
